@@ -127,7 +127,7 @@ a {
 
 .form {
     padding: 30px 20px 30px 20px;
-    width: 970px;
+    width: 940px;
     margin: 0 auto;
     margin-top: 20px; 
     max-height: 350px;
@@ -218,4 +218,80 @@ span {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.cards {
+    padding: 0 30px 0 30px;
+}
+
+.cards_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards_item {
+    width: 300px;
+    padding-top: 20px;
+}
+
+.item_photo {
+    width: 300px;
+    height: 150px;
+    background-color: #969696;
+    border-radius: 5px 5px 0 0;
+}
+
+.item_descr {
+    padding:  0 20px 0 20px;
+    background-color: #fff;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.item_descr p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.items {
+    padding-top: 30px;
+}
+
+.items_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 140px);
+    grid-rows: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items_wrapper .item {
+    width: 140px;
+    height: 100px;
+    background-color: #969696;
+}
+
+.inputs {
+    padding-top: 50px;
+}
+
+.inputs_wrapper {
+    /* padding: 30px 10px 10px 10px; */
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    background-color: #969696;
+    gap: 10px 40px;
+}
+
+.inputs_wrapper input {
+    width: 250px;
+    height: 40px;
+    margin: 0;
 }
