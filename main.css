@@ -2,7 +2,11 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    /* background-color: #e2e1e3; */
+
+}
+
+body {
+    background-color: #e2e1e3;
 
 }
 
@@ -81,6 +85,7 @@ nav {
     font-size: 12px;
     padding: 10px;
     position: relative;
+    font-weight: bold;
 }
 
 .text::before {
@@ -93,19 +98,34 @@ nav {
     background-color: #969696;
 }
 
+.text:hover {
+    color: #006c86;
+    cursor: pointer;
+}
+
 .menu {
-    width: 970px;
+    width: 940px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .menu_item {
     margin: 0.5px;
-    padding: 10px 14px;
+    padding: 10px 21px;
     background-color: #616161;
+}
+
+.menu_item:hover a {
+    color: white;
+    background-color: #a9a9a9;
+}
+.menu_item:hover {
+    color: #a9a9a9;
+    background-color: #a9a9a9;
+    cursor: pointer;
 }
 
 a {
@@ -116,18 +136,10 @@ a {
     background-color: #616161;
 }
 
-.active_item a {
-    color: #a9a9a9;
-    background-color: #a9a9a9;
-}
-.active_item {
-    color: #a9a9a9;
-    background-color: #a9a9a9;
-}
 
 .form {
     padding: 30px 20px 30px 20px;
-    width: 970px;
+    width: 940px;
     margin: 0 auto;
     margin-top: 20px; 
     max-height: 350px;
@@ -220,3 +232,82 @@ span {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+
+
+.cards {
+    padding: 30px 0 30px 0;
+}
+
+.cards_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards_item {
+    width: 300px;
+}
+
+.item_photo {
+    width: 300px;
+    height: 150px;
+    background-color: #969696;
+    border-radius: 5px 5px 0 0;
+}
+
+.item_descr {
+    padding:  10px 20px 15px 20px;
+    background-color: #fff;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.item_descr p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.items {
+    padding-top: 30px;
+}
+
+.items_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items_wrapper .item {
+    width: 140px;
+    height: 100px;
+    background-color: #969696;
+}
+
+.inputs {
+    padding-top: 50px;
+}
+
+.inputs_wrapper {
+    /* padding: 30px 10px 10px 10px; */
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    background-color: #969696;
+    gap: 10px 40px;
+}
+
+.inputs_wrapper input {
+    width: 250px;
+    height: 40px;
+    margin: 0;
+}
+>>>>>>> a4ce5e4e93ec185b565367e2bd5367eb2de84e9e
