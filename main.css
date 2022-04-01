@@ -299,13 +299,13 @@ h3 {
     display: none;
     text-align: center;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #006c86;
 }
 
 .inputs {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .inputs_wrapper {
@@ -532,21 +532,22 @@ h3 {
     }
 
 
-
-
-
-
-
-
-
-
-
-    .items_more {
+    .items a {
         display: block;
     }
 
+    .items_wrapper {
+        grid-template-columns: repeat(2, 230px);
+    }
+
+    .items_wrapper .item {
+        width: 230px;
+    }
+    .items_wrapper .hidden {
+        display: none;
+    }
+
     .inputs_wrapper {
-        width: 450px;
         margin: 0 auto;
         grid-template-columns: repeat(1, 400px);
         padding: 25px 0 15px 0;
