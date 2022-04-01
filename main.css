@@ -114,7 +114,7 @@ nav {
 
 .menu_item {
     margin: 0.5px;
-    padding: 10px 21px;
+    padding: 10px 20px;
     background-color: #616161;
 }
 
@@ -354,11 +354,8 @@ h3 {
 
     }
 
-    .menu_item {
-        padding: 10px 10px;
-    }
-    a {
-        font-size: 14px;
+    .menu_item a {
+        font-size: 12px;
     }
 
     .modal {
