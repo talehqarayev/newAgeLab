@@ -32,6 +32,7 @@ header .lang {
     border: none;
     margin: 5px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .active {
@@ -104,7 +105,6 @@ nav {
 }
 
 .menu {
-    /* width: 940px; */
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -145,7 +145,7 @@ a {
     min-height: 350px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: flex-end;
 }
 
 h2 {
@@ -158,14 +158,15 @@ h2 {
 .form_input{
     display: grid;
     grid-template-columns: repeat(2, 135px);
+    column-gap: 20px;
+    row-gap: 10px;
     grid-template-rows: repeat(2, 50px);
     grid-auto-rows: auto;
 }
 
 input {
     height: 30px;
-    margin: 5px;
-    border: 2px solid black;
+    border: 2px solid #616161;
 }
 
 
@@ -199,23 +200,28 @@ span {
 
 
 .modal {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    /* min-height: 200px; */
     background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 5px;
 }
 
+.modal p {
+    margin: 0;
+}
+
+
+
 .modal_btn {
     display: block;
     margin: 0 auto;
     margin-top: 15px;
-    width: 130px;
+    width: 150px;
     height: 30px;
     background-color: #006c86;
     text-transform: uppercase;
@@ -381,8 +387,9 @@ h3 {
 
 
   @media (max-width: 768px) {
+
       .container {
-          max-width: 550px;
+          max-width: 570px;
       }
 
       .logo {
@@ -395,6 +402,10 @@ h3 {
           flex-wrap: nowrap;
       }
 
+      .menu {
+          justify-content: center;
+      }
+      
       .menu_item {
           padding: 10px 9px;
       }
@@ -406,8 +417,18 @@ h3 {
           width: 230px;
       }
 
+      .modal p {
+          font-size: 14px;
+      }
+
+      .modal strong {
+          margin-top: 5px;
+          font-size: 14px;
+      }
+
       .form {
         padding: 20px 15px 20px 15px;
+        margin-top: 0;
       }
       
       .input_btn {
@@ -496,6 +517,11 @@ h3 {
     .modal {
         margin-top: 20px;
         width: 100%;
+    }
+
+    .modal p {
+        margin: 5px;
+        font-size: 12px;
     }
 
     .modal_btn {
