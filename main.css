@@ -142,8 +142,7 @@ a {
     height: auto;
     margin: 0 auto;
     margin-top: 20px; 
-    max-height: 350px;
-    background-color: #cccccc;
+    min-height: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -208,7 +207,6 @@ span {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-size: 14px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 5px;
 }
@@ -298,7 +296,6 @@ h3 {
 .inputs_wrapper {
     padding: 35px 20px 15px 20px;
     max-height: 500px;
-    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 280px);
     justify-content: center;
@@ -381,6 +378,8 @@ h3 {
     
   }
 
+
+
   @media (max-width: 768px) {
       .container {
           max-width: 550px;
@@ -441,3 +440,95 @@ h3 {
           width: 180px;
       }
   }
+
+
+
+  @media (max-width: 576px) {
+      .container {
+          max-width: 480px;
+      }
+
+
+      .lang button {
+          font-size: 14px;
+      }
+      nav {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    
+    
+    .logo {
+        text-align: center;
+        font-size: 30px;
+        height: 60px;
+        font-weight: bold;
+        background-color: #969696;
+        color: white;
+        border-radius: 0;
+        padding: 10px 65px;
+    }
+    
+    
+    .nav_text {
+        padding-left: 12px;
+        flex-direction: column;
+    }
+
+    .form {
+        flex-direction: column;
+        border: none;
+
+    }
+
+    .form_input {
+        grid-template-columns: repeat(1, auto);
+        column-gap: 100px;
+    }
+
+    .form_input input {
+        border: 1px solid black;
+    }
+
+    .form_input .input_btn {
+        width: 140px;
+    }
+    .modal {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .modal_btn {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+
+    .cards_item {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .inputs_wrapper {
+        width: 450px;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 400px);
+        padding: 25px 0 15px 0;
+    }
+    
+    .inputs_wrapper input {
+        width: 100%;
+        border: none;
+    }
+}
