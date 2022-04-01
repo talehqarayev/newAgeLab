@@ -128,7 +128,7 @@ nav {
     cursor: pointer;
 }
 
-a {
+.menu_item a {
     text-transform: uppercase;
     font-size: 16px;
     text-decoration: none;
@@ -295,6 +295,15 @@ h3 {
     background-color: #969696;
 }
 
+.items_more{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #006c86;
+}
+
 .inputs {
     padding-top: 50px;
 }
@@ -325,7 +334,6 @@ h3 {
 
 
   /* MEDIA-QUERIES */
-
 
   @media (max-width: 992px) {
       .container {
@@ -368,8 +376,6 @@ h3 {
     .item_descr p {
         font-size: 12px;
     }
-
-
 
     .items_wrapper {
         grid-template-columns: repeat(4, 140px);
@@ -435,7 +441,6 @@ h3 {
           width: 130px;
       }
 
-
       .cards_wrapper {
           flex-direction: column;
           justify-content: center;
@@ -446,7 +451,6 @@ h3 {
           width: 550px;
           margin: 10px;
       }
-
 
       .items_wrapper {
           grid-template-columns: repeat(3, 140px);
@@ -469,7 +473,6 @@ h3 {
           max-width: 480px;
       }
 
-
       .lang button {
           font-size: 14px;
       }
@@ -477,7 +480,6 @@ h3 {
         margin-top: 20px;
         flex-direction: column;
     }
-    
     
     .logo {
         text-align: center;
@@ -490,7 +492,6 @@ h3 {
         padding: 10px 65px;
     }
     
-    
     .nav_text {
         padding-left: 12px;
         flex-direction: column;
@@ -499,7 +500,6 @@ h3 {
     .form {
         flex-direction: column;
         border: none;
-
     }
 
     .form_input {
@@ -544,7 +544,9 @@ h3 {
 
 
 
-
+    .items_more {
+        display: block;
+    }
 
     .inputs_wrapper {
         width: 450px;
