@@ -40,7 +40,7 @@ header .lang {
     color: white;
 }
 
-nav {
+.lorem {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -59,24 +59,24 @@ nav {
 }
 
 
-.nav_text {
+.lorem_text {
     width: 70%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.nav_text_left {
+.lorem_text_left {
     display: flex;
     justify-content: space-between;
 }
 
-.nav_text_center {
+.lorem_text_center {
     display: flex;
     justify-content: space-between;
 }
 
-.nav_text_right {
+.lorem_text_right {
     display: flex;
     justify-content: space-between;
 }
@@ -114,7 +114,7 @@ nav {
 
 .menu_item {
     margin: 0.5px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     background-color: #616161;
 }
 
@@ -130,22 +130,25 @@ nav {
 
 .menu_item a {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     color: white;
     background-color: #616161;
 }
 
+.mobile_menu {
+    display: none;
+}
 
-.form {
-    padding: 30px 20px 30px 20px;
-    height: auto;
+.form_wrapper {
+    padding: 0px 20px 0px 20px;
     margin: 0 auto;
     margin-top: 20px; 
     min-height: 350px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    background-color: #cccccc;
 }
 
 h2 {
@@ -340,7 +343,7 @@ h3 {
           max-width: 750px;
       }
 
-      .nav_text {
+      .lorem_text {
           width: 68%;
       }
       .text {
@@ -352,6 +355,10 @@ h3 {
         width: 10px;
         height: 10px;
 
+    }
+
+    .menu_item {
+        padding: 10px 20px;
     }
 
     .menu_item a {
@@ -392,7 +399,7 @@ h3 {
   @media (max-width: 768px) {
 
       .container {
-          max-width: 570px;
+          max-width: 560px;
       }
 
       .logo {
@@ -401,7 +408,7 @@ h3 {
           border-radius: 110px / 50px;
       }
 
-      .nav_text {
+      .lorem_text {
           flex-wrap: nowrap;
       }
 
@@ -429,11 +436,9 @@ h3 {
           font-size: 14px;
       }
 
-      .form {
-        padding: 20px 15px 20px 15px;
-        margin-top: 0;
+      .form_wrapper {
+          padding: 0  10px 0 10px;
       }
-      
       .input_btn {
           width: 130px;
       }
@@ -445,7 +450,7 @@ h3 {
       }
 
       .cards_item {
-          width: 550px;
+          width: 100%;
           margin: 10px;
       }
 
@@ -467,13 +472,13 @@ h3 {
 
   @media (max-width: 576px) {
       .container {
-          max-width: 480px;
+          max-width: 460px;
       }
 
       .lang button {
           font-size: 14px;
       }
-      nav {
+      .lorem {
         margin-top: 20px;
         flex-direction: column;
     }
@@ -489,18 +494,59 @@ h3 {
         padding: 10px 65px;
     }
     
-    .nav_text {
+    .lorem_text {
         padding-left: 12px;
         flex-direction: column;
     }
 
-    .form {
+    nav .menu {
+        display: none;
+    }
+
+    nav {
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #969696;
+
+    }
+
+    .mobile_menu {
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile_menu .hamburger {
+        display: block;
+        width: 20px;
+        height: 12px;
+    }
+
+    .mobile_menu .hamburger span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 3px;
+        transition: all .5s ease;
+    }
+    
+    .mobile_menu .hamburger_text {
+        padding-top: 3px;
+        color: white;
+        font-size: 16px;
+    }
+
+
+    .form_wrapper {
         flex-direction: column;
         border: none;
+        background-color: #e2e1e3;
+        padding: 0;
     }
 
     .form_input {
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(1, 190px);
         column-gap: 100px;
     }
 
@@ -526,10 +572,6 @@ h3 {
         margin-top: 10px;
     }
 
-
-    .cards_item {
-        width: 100%;
-    }
 
 
     .items a {
